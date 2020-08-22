@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G#",
+        "GiG",
+        "#G#"
+    ],
+    "key": {
+        "#": {
+            "item": "puffermod:golden_string"
+        },
+        "G": {
+            "item": "minecraft:gold_block"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "puffermod:golden_coins",
+        "count": 1
+    }
+}

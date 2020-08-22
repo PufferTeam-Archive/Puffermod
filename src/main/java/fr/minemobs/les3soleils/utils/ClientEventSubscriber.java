@@ -40,5 +40,28 @@ public class ClientEventSubscriber {
 				}
 			}
 		});
+
+		ItemInit.golden_coins.get().addPropertyOverride(new ResourceLocation(Main.modId, "count"), new IItemPropertyGetter() {
+
+			@Override
+			public float call(ItemStack stack, World worldIn, LivingEntity entityIn) {
+				switch (stack.getCount()) {
+					case 1:
+						return 0.25f;
+
+					case 2:
+						return 0.5f;
+
+					case 3:
+						return 0.75f;
+
+					case 4:
+						return 1.0f;
+
+					default:
+						return 0.0f;
+				}
+			}
+		});
     }
 }

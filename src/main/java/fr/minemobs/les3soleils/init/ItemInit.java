@@ -21,6 +21,14 @@ public class ItemInit {
             () -> new PufferCoin(new Item.Properties().group(Main.ModItemGroup.instance)
                     .rarity(Rarity.EPIC).maxStackSize(4)));
 
+    public static final RegistryObject<Item> golden_coins = ITEMS.register("golden_coins",
+            () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)
+                    .rarity(Rarity.RARE).maxStackSize(4)));
+
+    public static final RegistryObject<Item> golden_string = ITEMS.register("golden_string",
+            () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)
+                    .rarity(Rarity.RARE)));
+
     //// TODO: 22/08/2020 02h du mat, add some refined iron items
     //// TODO: (fini le 22/08/2020 à 15h)
 

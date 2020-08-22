@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:gold_block"
+    },
+    "result": "puffermod:golden_string",
+    "count": 1
+}

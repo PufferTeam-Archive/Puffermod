@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#GE",
+        "GCG",
+        "EG#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone_block"
+        },
+        "G": {
+            "item": "puffermod:golden_coins"
+        },
+        "E": {
+            "item": "minecraft:emerald_block"
+        },
+        "C": {
+            "item": "mekanism:basic_control_circuit"
+        }
+    },
+    "result": {
+        "item": "puffermod:puffer_coins",
+        "count": 1
+    }
+}
