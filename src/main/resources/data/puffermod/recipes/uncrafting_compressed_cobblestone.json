@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "puffermod:compressed_cobblestone"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cobblestone",
+        "count": 9
+    }
+}

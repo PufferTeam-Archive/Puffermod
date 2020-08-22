@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "puffermod:compressed_cobblestone"
+        }
+    },
+    "result": {
+        "item": "puffermod:compressed_cobblestone2",
+        "count": 1
+    }
+}
