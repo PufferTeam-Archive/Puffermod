@@ -1,4 +1,4 @@
-package fr.minemobs.les3soleils.utils.enums;
+package fr.minemobs.puffermod.utils.enums;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;

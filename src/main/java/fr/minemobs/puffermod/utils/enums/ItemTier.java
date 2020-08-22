@@ -1,13 +1,10 @@
-package fr.minemobs.les3soleils.utils.enums;
+package fr.minemobs.puffermod.utils.enums;
 
 import java.util.function.Supplier;
 
-import fr.minemobs.les3soleils.init.ItemInit;
-import net.minecraft.block.Blocks;
+import fr.minemobs.puffermod.init.ItemInit;
 import net.minecraft.item.IItemTier;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.util.LazyValue;
 
 public enum ItemTier implements IItemTier {

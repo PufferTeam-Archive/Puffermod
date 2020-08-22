@@ -1,4 +1,4 @@
-package fr.minemobs.les3soleils.object.item;
+package fr.minemobs.puffermod.object.item;
 
 import net.minecraft.item.Item;
 

@@ -1,4 +1,4 @@
-package fr.minemobs.les3soleils.command;
+package fr.minemobs.puffermod.command;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;

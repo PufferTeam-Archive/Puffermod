@@ -1,13 +1,11 @@
-package fr.minemobs.les3soleils.init;
+package fr.minemobs.puffermod.init;
 
-import fr.minemobs.les3soleils.Main;
+import fr.minemobs.puffermod.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.Scanner;
 
 import static net.minecraft.block.SoundType.*;
 

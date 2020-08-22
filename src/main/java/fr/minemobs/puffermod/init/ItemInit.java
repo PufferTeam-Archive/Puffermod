@@ -1,15 +1,17 @@
-package fr.minemobs.les3soleils.init;
+package fr.minemobs.puffermod.init;
 
-import fr.minemobs.les3soleils.Main;
-import fr.minemobs.les3soleils.object.item.PufferCoin;
-import fr.minemobs.les3soleils.object.item.RefinedIron;
-import fr.minemobs.les3soleils.utils.enums.ItemTier;
+import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.object.item.PufferCoin;
+import fr.minemobs.puffermod.object.item.RefinedIron;
+import fr.minemobs.puffermod.utils.enums.ItemTier;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemInit {
+
+    // ICondition
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.modId);
 
@@ -28,6 +30,9 @@ public class ItemInit {
     public static final RegistryObject<Item> golden_string = ITEMS.register("golden_string",
             () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)
                     .rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> mask = ITEMS.register("mask",
+            () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //// TODO: 22/08/2020 02h du mat, add some refined iron items
     //// TODO: (fini le 22/08/2020 à 15h)

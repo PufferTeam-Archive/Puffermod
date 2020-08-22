@@ -1,7 +1,7 @@
-package fr.minemobs.les3soleils.utils;
+package fr.minemobs.puffermod.utils;
 
-import fr.minemobs.les3soleils.Main;
-import fr.minemobs.les3soleils.init.ItemInit;
+import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.init.ItemInit;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemStack;

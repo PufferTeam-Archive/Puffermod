@@ -1,4 +1,4 @@
-package fr.minemobs.les3soleils.utils.helper;
+package fr.minemobs.puffermod.utils.helper;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.InputMappings;

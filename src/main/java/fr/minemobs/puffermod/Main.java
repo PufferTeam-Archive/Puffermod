@@ -1,8 +1,8 @@
-package fr.minemobs.les3soleils;
+package fr.minemobs.puffermod;
 
-import fr.minemobs.les3soleils.command.SetFireCommand;
-import fr.minemobs.les3soleils.init.BlockInit;
-import fr.minemobs.les3soleils.init.ItemInit;
+import fr.minemobs.puffermod.command.SetFireCommand;
+import fr.minemobs.puffermod.init.BlockInit;
+import fr.minemobs.puffermod.init.ItemInit;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
