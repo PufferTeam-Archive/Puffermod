@@ -1,7 +1,9 @@
 package fr.minemobs.puffermod.init;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.object.blocks.SawBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,4 +30,7 @@ public class BlockInit {
 
     public static final RegistryObject<Block> compressed_cobblestone4 = BLOCKS.register("compressed_cobblestone4", () -> new Block(
             Block.Properties.create(Material.ROCK).hardnessAndResistance(32.0f, 92.0f).sound(STONE)));
+
+    public static final RegistryObject<Block> example_furnace = BLOCKS.register("saw_block", () -> new SawBlock(
+            Block.Properties.from(Blocks.IRON_BLOCK)));
 }

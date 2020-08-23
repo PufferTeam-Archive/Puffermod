@@ -16,7 +16,7 @@ public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.modId);
 
     public static final RegistryObject<Item> refined_iron_ingot = ITEMS.register("refined_iron_ingot",
-            () -> new RefinedIron(new Item.Properties().group(Main.ModItemGroup.instance)
+            () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)
                     .maxStackSize(63)));
 
     public static final RegistryObject<Item> puffer_coins = ITEMS.register("puffer_coins",

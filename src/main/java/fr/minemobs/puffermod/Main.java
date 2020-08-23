@@ -1,8 +1,7 @@
 package fr.minemobs.puffermod;
 
 import fr.minemobs.puffermod.command.SetFireCommand;
-import fr.minemobs.puffermod.init.BlockInit;
-import fr.minemobs.puffermod.init.ItemInit;
+import fr.minemobs.puffermod.init.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -28,6 +27,9 @@ public class Main {
         MinecraftForge.EVENT_BUS.addListener(this::serverStartingEvent);
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
+        ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
+        RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 

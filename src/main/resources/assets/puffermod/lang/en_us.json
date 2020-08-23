@@ -11,6 +11,7 @@
     "block.puffermod.compressed_cobblestone2": "Double Compressed Cobblestone",
     "block.puffermod.compressed_cobblestone3": "Triple Compressed Cobblestone",
     "block.puffermod.compressed_cobblestone4": "Quadruple Compressed Cobblestone",
+    "block.puffermod.saw_block": "Saw block",
 
     //itemgroup
     "itemGroup.Puffermod Items": "Puffermod",
@@ -18,5 +19,8 @@
     //tooltip
     "tooltip.puffermod.shift": "HOLD\u00A7e SHIFT\u00A77 for more informations!",
     "tooltip.puffermod.refined": "You can use it for crafting steel ingot",
-    "tooltip.puffermod.minemobs": "Minemobs est le plus beau de tout les rebeux"
+    "tooltip.puffermod.minemobs": "Minemobs est le plus beau de tout les rebeux",
+
+    //containers
+    "container.puffermod.saw_block": "Saw block"
 }

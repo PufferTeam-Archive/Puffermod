@@ -1,0 +1,10 @@
+{
+    "type": "puffermod:example",
+    "output": {
+        "item": "puffermod:golden_string"
+    },
+
+    "input": {
+        "item": "minecraft:gold_ore"
+    }
+}

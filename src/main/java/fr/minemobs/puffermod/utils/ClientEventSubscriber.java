@@ -1,7 +1,10 @@
 package fr.minemobs.puffermod.utils;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.client.gui.SawScreen;
 import fr.minemobs.puffermod.init.ItemInit;
+import fr.minemobs.puffermod.init.ModContainerTypes;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemStack;
@@ -17,6 +20,8 @@ public class ClientEventSubscriber {
 
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent e){
+
+		ScreenManager.registerFactory(ModContainerTypes.EXAMPLE_FURNACE.get(), SawScreen::new);
 
         ItemInit.puffer_coins.get().addPropertyOverride(new ResourceLocation(Main.modId, "count"), new IItemPropertyGetter() {
 			

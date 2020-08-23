@@ -13,11 +13,6 @@ public class RefinedIron extends Item {
         super(properties);
     }
 
-    @Override
-    public boolean isDamageable() {
-        return true;
-    }
-
     /*/@Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         if(!KeyboardHelper.isHoldingShift()){
@@ -30,9 +25,4 @@ public class RefinedIron extends Item {
         }
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }/*/
-
-    @Override
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        return super.onItemRightClick(worldIn, playerIn, handIn);
-    }
 }
