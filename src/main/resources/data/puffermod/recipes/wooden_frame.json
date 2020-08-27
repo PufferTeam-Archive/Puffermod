@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/D/",
+        "JRS",
+        "/A/"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "D": {
+            "item": "minecraft:dark_oak_log"
+        },
+        "J": {
+            "item": "minecraft:jungle_log"
+        },
+        "R": {
+            "item": "minecraft:redstone_block"
+        },
+        "S": {
+            "item": "minecraft:spruce_log"
+        },
+        "A": {
+            "item": "minecraft:acacia_log"
+        }
+    },
+    "result": {
+        "item": "puffermod:wooden_frame",
+        "count": 1
+    }
+}

@@ -1,9 +1,15 @@
 {
     //item
-    "item.puffermod.refined_iron_ingot": "Refined iron ingot",
+    "item.puffermod.refined_iron_ingot": "Refined Iron Ingot",
     "item.puffermod.puffer_coins": "Puffer coins",
-    "item.puffermod.golden_coins": "Golden coins",
     "item.puffermod.golden_string": "Golden string",
+    "item.puffermod.golden_coins": "Golden coins",
+    "item.puffermod.refined_iron_pickaxe": "Refined Iron Pickaxe",
+    "item.puffermod.refined_iron_sword": "Refined Iron Sword",
+    "item.puffermod.refined_iron_hoe": "Refined Iron Hoe",
+    "item.puffermod.refined_iron_axe": "Refined Iron Axe",
+    "item.puffermod.refined_iron_shovel": "Refined Iron Shovel",
+    "item.puffermod.mask": "Mask",
 
     //block
     "block.puffermod.salut": "Hi",
@@ -12,6 +18,7 @@
     "block.puffermod.compressed_cobblestone3": "Triple Compressed Cobblestone",
     "block.puffermod.compressed_cobblestone4": "Quadruple Compressed Cobblestone",
     "block.puffermod.saw_block": "Saw block",
+    "block.puffermod.wooden_frame": "Wooden frame",
 
     //itemgroup
     "itemGroup.Puffermod Items": "Puffermod",
