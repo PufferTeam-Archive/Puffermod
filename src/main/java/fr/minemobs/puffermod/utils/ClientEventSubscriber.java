@@ -19,54 +19,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ClientEventSubscriber {
 
     @SubscribeEvent
-    public static void clientSetup(FMLClientSetupEvent e){
+    public static void clientSetup(FMLClientSetupEvent e) {
 
 		ScreenManager.registerFactory(ModContainerTypes.EXAMPLE_FURNACE.get(), SawScreen::new);
-
-        ItemInit.puffer_coins.get().addPropertyOverride(new ResourceLocation(Main.modId, "count"), new IItemPropertyGetter() {
-			
-			@Override
-			public float call(ItemStack stack, World worldIn, LivingEntity entityIn) {
-				switch (stack.getCount()) {
-				case 1:
-					return 0.25f;
-					
-				case 2:
-					return 0.5f;
-					
-				case 3:
-					return 0.75f;
-					
-				case 4:
-					return 1.0f;
-
-				default:
-					return 0.0f;
-				}
-			}
-		});
-
-		ItemInit.golden_coins.get().addPropertyOverride(new ResourceLocation(Main.modId, "count"), new IItemPropertyGetter() {
-
-			@Override
-			public float call(ItemStack stack, World worldIn, LivingEntity entityIn) {
-				switch (stack.getCount()) {
-					case 1:
-						return 0.25f;
-
-					case 2:
-						return 0.5f;
-
-					case 3:
-						return 0.75f;
-
-					case 4:
-						return 1.0f;
-
-					default:
-						return 0.0f;
-				}
-			}
-		});
-    }
+	}
 }

@@ -63,4 +63,18 @@ public class ItemInit {
             () -> new HoeItem(ItemTier.REFINED_IRON, -1.0F,
                     new Item.Properties().group(Main.ModItemGroup.instance)));
 
+    // Singularitées
+    //tech
+
+    //magie
+
+    //exploration
+
+    //build
+
+    //tools
+
+    //Puffermod
+
+
 }

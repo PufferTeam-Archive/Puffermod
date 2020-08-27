@@ -1,24 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "puffermod:items/puffer_coins1"
-  },
-
-  "overrides": [
-  
-  {"predicate": {"puffermod:count": 0.0},
-  "model": "puffermod:item/puffer_coins"},
-  
-  {"predicate": {"puffermod:count": 0.25},
-  "model": "puffermod:item/puffer_coins"},
-
-  {"predicate": {"puffermod:count": 0.5},
-  "model": "puffermod:item/puffercoins/puffer_coins2"},
-
-  {"predicate": {"puffermod:count": 0.75},
-  "model": "puffermod:item/puffercoins/puffer_coins3"},
-
-  {"predicate": {"puffermod:count": 1.0},
-  "model": "puffermod:item/puffercoins/puffer_coins4"}
-]
+    "layer0": "puffermod:items/puffer_coins4"
+  }
 }
