@@ -14,8 +14,8 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 # The modid of the mod
 modId="puffermod" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="1.2" #mandatory
- # A display name for the mod
+version="1.7.0" #mandatory
+# A display name for the mod
 displayName="Puffermod" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #updateJSONURL="http://myurl.me/" #optional
@@ -24,7 +24,7 @@ displayURL="https://discord.gg/7u2Y3K7" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logo.png" #optional
 # A text field displayed in the mod UI
-credits="Hello u" #optional
+credits="Hello you" #optional
 # A text field displayed in the mod UI
 authors="minemobs" #optional
 # The description text for the mod (multi line!) (#mandatory)

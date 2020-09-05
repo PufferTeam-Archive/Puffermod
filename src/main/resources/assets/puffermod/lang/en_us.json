@@ -10,6 +10,9 @@
     "item.puffermod.refined_iron_axe": "Refined Iron Axe",
     "item.puffermod.refined_iron_shovel": "Refined Iron Shovel",
     "item.puffermod.mask": "Mask",
+    "item.puffermod.karlson_milk": "Karlson Milk",
+    "item.puffermod.empty_brick": "Empty Carton",
+    "item.puffermod.test_item": "test item",
 
     //block
     "block.puffermod.salut": "Hi",
@@ -27,7 +30,11 @@
     "tooltip.puffermod.shift": "HOLD\u00A7e SHIFT\u00A77 for more informations!",
     "tooltip.puffermod.refined": "You can use it for crafting steel ingot",
     "tooltip.puffermod.minemobs": "Minemobs est le plus beau de tout les rebeux",
+    "tooltip.puffermod.karlson.milk": "This is an milk carton from the game Karlson made by Dani",
 
     //containers
-    "container.puffermod.saw_block": "Saw block"
+    "container.puffermod.saw_block": "Saw block",
+
+    //messages
+    "msg.puffermod.thic": "Is it just me or it look kinda\u00A7a THICCCC\u00A7r ?"
 }
