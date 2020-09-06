@@ -1,6 +1,7 @@
 package fr.minemobs.puffermod.object.item;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.init.ItemInit;
 import fr.minemobs.puffermod.utils.helper.KeyboardHelper;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.util.ITooltipFlag;
@@ -51,10 +52,10 @@ public class KarlsonItem extends Item {
         }
 
         if (stack.isEmpty()) {
-            return new ItemStack(Items.GLASS_BOTTLE);
+            return new ItemStack(ItemInit.empty_brick.get());
         } else {
             if (entityLiving instanceof PlayerEntity && !((PlayerEntity)entityLiving).abilities.isCreativeMode) {
-                ItemStack itemstack = new ItemStack(Items.GLASS_BOTTLE);
+                ItemStack itemstack = new ItemStack(ItemInit.empty_brick.get());
                 PlayerEntity playerentity = (PlayerEntity)entityLiving;
                 if (!playerentity.inventory.addItemStackToInventory(itemstack)) {
                     playerentity.dropItem(itemstack, false);
@@ -88,7 +89,7 @@ public class KarlsonItem extends Item {
 
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        if(KeyboardHelper.isHoldingShift() && KeyboardHelper.isHoldingControl()){
+        if(KeyboardHelper.isHoldingShift()){
             tooltip.add(new TranslationTextComponent("tooltip." + Main.modId + ".karlson.milk"));
         }else{
             tooltip.add(new TranslationTextComponent("tooltip." + Main.modId + ".shift"));
