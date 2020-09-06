@@ -47,7 +47,7 @@ public class KarlsonItem extends Item {
         if (!worldIn.isRemote) {
             entityLiving.removePotionEffect(Effects.POISON);
             entityLiving.addPotionEffect(new EffectInstance(Effects.NAUSEA, 200, 1));
-            entityLiving.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1200, 4));
+            entityLiving.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 1200, 1));
             //entityLiving.addPotionEffect(new EffectInstance(Effects.SATURATION, 120, 1));
         }
 

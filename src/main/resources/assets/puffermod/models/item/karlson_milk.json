@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/cyan_concrete",
-		"2": "TextureLes3soleils/rdmtexture",
+		"2": "puffermod:items/rdmtexture",
 		"particle": "block/cyan_concrete"
 	},
 	"elements": [
