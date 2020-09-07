@@ -4,12 +4,12 @@ import fr.minemobs.puffermod.Main;
 import fr.minemobs.puffermod.object.item.EmptyBrick;
 import fr.minemobs.puffermod.object.item.KarlsonItem;
 import fr.minemobs.puffermod.object.item.PufferCoin;
-import fr.minemobs.puffermod.object.item.RefinedIron;
 import fr.minemobs.puffermod.utils.enums.ItemTier;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.lwjgl.system.CallbackI;
 
 public class ItemInit {
 
@@ -44,6 +44,9 @@ public class ItemInit {
 
     public static final RegistryObject<Item> empty_brick = ITEMS.register("empty_brick",
             () -> new EmptyBrick(new Item.Properties().group(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<BucketItem> KARLSON_CARTON = ITEMS.register("karlson_bucket", () -> new BucketItem(() -> FluidInit.MILK_FLUID.get(),
+            new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
 
 
     //// TODO: 22/08/2020 02h du mat, add some refined iron items

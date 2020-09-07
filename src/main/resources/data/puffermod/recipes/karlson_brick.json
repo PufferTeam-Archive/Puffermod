@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "puffermod:karlson_bucket"
+    },
+    "result": "puffermod:karlson_milk",
+    "experience": 0.1,
+    "cookingtime": 200
+}

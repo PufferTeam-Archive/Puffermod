@@ -2,6 +2,7 @@ package fr.minemobs.puffermod;
 
 import fr.minemobs.puffermod.command.SetFireCommand;
 import fr.minemobs.puffermod.init.*;
+import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -30,6 +31,7 @@ public class Main {
         MinecraftForge.EVENT_BUS.addListener(this::serverStartingEvent);
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        FluidInit.FLUIDS.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
         RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
@@ -40,7 +42,7 @@ public class Main {
     public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
         final IForgeRegistry<Item> registry = event.getRegistry();
 
-        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+        BlockInit.BLOCKS.getEntries().stream().filter(block -> !(block.get() instanceof FlowingFluidBlock)).map(RegistryObject::get).forEach(block -> {
             final Item.Properties properties = new Item.Properties().group(ModItemGroup.instance);
             final BlockItem blockItem = new BlockItem(block, properties.group(ModItemGroup.instance));
             blockItem.setRegistryName(block.getRegistryName());
