@@ -1,6 +1,7 @@
 package fr.minemobs.puffermod.init;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.object.item.CheeseItem;
 import fr.minemobs.puffermod.object.item.EmptyBrick;
 import fr.minemobs.puffermod.object.item.KarlsonItem;
 import fr.minemobs.puffermod.object.item.PufferCoin;
@@ -36,6 +37,9 @@ public class ItemInit {
     public static final RegistryObject<Item> mask = ITEMS.register("mask",
             () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> cheese = ITEMS.register("cheese",
+            () -> new CheeseItem(new Item.Properties().group(Main.ModItemGroup.instance)));
+
     public static final RegistryObject<Item> test_item = ITEMS.register("test_item",
             () -> new BowItem(new Item.Properties().group(Main.ModItemGroup.instance)));
 
@@ -45,7 +49,8 @@ public class ItemInit {
     public static final RegistryObject<Item> empty_brick = ITEMS.register("empty_brick",
             () -> new EmptyBrick(new Item.Properties().group(Main.ModItemGroup.instance)));
 
-    public static final RegistryObject<BucketItem> KARLSON_CARTON = ITEMS.register("karlson_bucket", () -> new BucketItem(() -> FluidInit.MILK_FLUID.get(),
+    public static final RegistryObject<BucketItem> KARLSON_CARTON = ITEMS.register("karlson_bucket",
+            () -> new BucketItem(() -> FluidInit.MILK_FLUID.get(),
             new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
 
 

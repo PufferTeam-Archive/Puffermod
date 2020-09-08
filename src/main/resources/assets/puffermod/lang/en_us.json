@@ -13,6 +13,9 @@
     "item.puffermod.karlson_milk": "Karlson Milk",
     "item.puffermod.empty_brick": "Empty Carton",
     "item.puffermod.test_item": "test item",
+    "item.puffermod.cheese": "Cheese",
+    "item.puffermod.karlson_bucket": "Milk Bucket",
+    "fluid.puffermod.milk_fluid": "Milk fluid",
 
     //block
     "block.puffermod.salut": "Hi",
@@ -31,10 +34,12 @@
     "tooltip.puffermod.refined": "You can use it for crafting steel ingot",
     "tooltip.puffermod.minemobs": "Minemobs est le plus beau de tout les rebeux",
     "tooltip.puffermod.karlson.milk": "This is an milk carton from the game Karlson made by Dani",
+    "tooltip.puffermod.coulommiers": "This cheese is a coulommiers a cheese that I have never tasted.",
 
     //containers
     "container.puffermod.saw_block": "Saw block",
 
     //messages
-    "msg.puffermod.thic": "Is it just me or it look kinda\u00A7a THICCCC\u00A7r ?"
+    "msg.puffermod.thic": "Is it just me or it look kinda\u00A7a THICCCC\u00A7r ?",
+    "msg.puffermod.coulommiers": "Ouch, my stomach hurts."
 }
