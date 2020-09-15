@@ -1,6 +1,7 @@
 package fr.minemobs.puffermod.utils;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.client.gui.ElectricFurnaceScreen;
 import fr.minemobs.puffermod.client.gui.SawScreen;
 import fr.minemobs.puffermod.init.ItemInit;
 import fr.minemobs.puffermod.init.ModContainerTypes;
@@ -22,5 +23,6 @@ public class ClientEventSubscriber {
     public static void clientSetup(FMLClientSetupEvent e) {
 
 		ScreenManager.registerFactory(ModContainerTypes.EXAMPLE_FURNACE.get(), SawScreen::new);
-	}
+        ScreenManager.registerFactory(ModContainerTypes.ELECTRIC_FURNACE.get(), ElectricFurnaceScreen::new);
+    }
 }

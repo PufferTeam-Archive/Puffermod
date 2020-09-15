@@ -34,12 +34,17 @@
     "tooltip.puffermod.refined": "You can use it for crafting steel ingot",
     "tooltip.puffermod.minemobs": "Minemobs est le plus beau de tout les rebeux",
     "tooltip.puffermod.karlson.milk": "This is an milk carton from the game Karlson made by Dani",
-    "tooltip.puffermod.coulommiers": "This cheese is a coulommiers a cheese that I have never tasted.",
+    "tooltip.puffermod.coulommiers": "This cheese is a coulommiers, a cheese that I have never tasted.",
 
     //containers
     "container.puffermod.saw_block": "Saw block",
 
     //messages
     "msg.puffermod.thic": "Is it just me or it look kinda\u00A7a THICCCC\u00A7r ?",
-    "msg.puffermod.coulommiers": "Ouch, my stomach hurts."
+    "msg.puffermod.coulommiers": "Ouch, my stomach hurts.",
+
+    //guis
+    "gui.puffermod.energy": "Energy %s PE",
+	"gui.puffermod.smeltTimeProgress": "Smelt time %s/%s",
+	"gui.puffermod.fuelBurnTimeProgress": "Fuel burn time %s/%s"
 }

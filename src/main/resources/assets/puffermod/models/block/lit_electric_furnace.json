@@ -1,0 +1,8 @@
+{
+	"parent": "block/furnace",
+    "textures": {
+        "top": "puffermod:blocks/furnace_top",
+        "front": "puffermod:blocks/lit_electric_furnace_front",
+        "side": "puffermod:blocks/furnace_side"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "facing=north,lit=false":  { "model": "puffermod:block/electric_furnace" },
+        "facing=east,lit=false":   { "model": "puffermod:block/electric_furnace", "y": 90 },
+        "facing=south,lit=false":   { "model": "puffermod:block/electric_furnace", "y": 180 },
+        "facing=west,lit=false":   { "model": "puffermod:block/electric_furnace", "y": 270 },
+        
+        "facing=north,lit=true":  { "model": "puffermod:block/lit_electric_furnace" },
+        "facing=east,lit=true":   { "model": "puffermod:block/lit_electric_furnace", "y": 90 },
+        "facing=south,lit=true":   { "model": "puffermod:block/lit_electric_furnace", "y": 180 },
+        "facing=west,lit=true":   { "model": "puffermod:block/lit_electric_furnace", "y": 270 }
+    }
+}

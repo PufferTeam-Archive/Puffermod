@@ -1,6 +1,7 @@
 package fr.minemobs.puffermod.init;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.tileentity.ElectricFurnaceTileEntity;
 import fr.minemobs.puffermod.tileentity.SawTileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
@@ -15,5 +16,9 @@ public class ModTileEntityTypes {
 	public static final RegistryObject<TileEntityType<SawTileEntity>> SAW = TILE_ENTITY_TYPES
 			.register("saw", () -> TileEntityType.Builder
 					.create(SawTileEntity::new, BlockInit.example_furnace.get()).build(null));
+
+	public static final RegistryObject<TileEntityType<ElectricFurnaceTileEntity>> ELECTRIC_FURNACE = TILE_ENTITY_TYPES
+			.register("electric_furnace", () -> TileEntityType.Builder
+					.create(ElectricFurnaceTileEntity::new, BlockInit.ELECTRIC_FURNACE.get()).build(null));
 
 }

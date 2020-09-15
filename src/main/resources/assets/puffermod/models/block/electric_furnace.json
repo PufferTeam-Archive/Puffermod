@@ -1,0 +1,6 @@
+{
+	"parent": "block/furnace",
+	"textures": {
+		"front": "puffermod:blocks/electric_furnace_front"
+	}
+}

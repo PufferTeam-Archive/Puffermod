@@ -2,6 +2,7 @@ package fr.minemobs.puffermod;
 
 import fr.minemobs.puffermod.command.SetFireCommand;
 import fr.minemobs.puffermod.init.*;
+import fr.minemobs.puffermod.world.gen.StructureGen;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,29 +14,36 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod("puffermod")
 @Mod.EventBusSubscriber(modid = "puffermod", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Main {
 
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String modId = "puffermod";
 
     public Main() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        MinecraftForge.EVENT_BUS.addListener(this::serverStartingEvent);
+        modEventBus.addListener(this::serverStartingEvent);
+        modEventBus.addListener(this::setup);
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
         FluidInit.FLUIDS.register(modEventBus);
+        FeatureInit.FEATURES.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
         RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
-        MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.register(this);
     }
 
     @SubscribeEvent
@@ -48,6 +56,10 @@ public class Main {
             blockItem.setRegistryName(block.getRegistryName());
             registry.register(blockItem);
         });
+    }
+
+    private void setup(final FMLCommonSetupEvent event){
+        DeferredWorkQueue.runLater(StructureGen::generateStructure);
     }
 
     @SubscribeEvent

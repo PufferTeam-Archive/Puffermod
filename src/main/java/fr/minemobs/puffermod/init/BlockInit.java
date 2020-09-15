@@ -1,11 +1,11 @@
 package fr.minemobs.puffermod.init;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.object.blocks.ElectricFurnaceBlock;
 import fr.minemobs.puffermod.object.blocks.SawBlock;
 import fr.minemobs.puffermod.object.blocks.WoodenFrameBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -35,6 +35,9 @@ public class BlockInit {
 
     public static final RegistryObject<Block> example_furnace = BLOCKS.register("saw_block", () -> new SawBlock(
             Block.Properties.from(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> ELECTRIC_FURNACE = BLOCKS.register("electric_furnace", () -> new ElectricFurnaceBlock(
+            Block.Properties.create(Material.MISCELLANEOUS)));
 
     public static final RegistryObject<Block> wooden_frame = BLOCKS.register("wooden_frame", () -> new WoodenFrameBlock(
             Block.Properties.from(Blocks.REDSTONE_BLOCK).lightValue(2).sound(WOOD)));

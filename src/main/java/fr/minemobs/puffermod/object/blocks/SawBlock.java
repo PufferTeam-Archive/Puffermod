@@ -1,5 +1,6 @@
 package fr.minemobs.puffermod.object.blocks;
 
+import fr.minemobs.puffermod.Main;
 import fr.minemobs.puffermod.init.ModTileEntityTypes;
 import fr.minemobs.puffermod.tileentity.SawTileEntity;
 import fr.minemobs.puffermod.utils.ExampleItemHandler;
