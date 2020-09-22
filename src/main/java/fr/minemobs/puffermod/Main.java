@@ -2,8 +2,10 @@ package fr.minemobs.puffermod;
 
 import fr.minemobs.puffermod.command.SetFireCommand;
 import fr.minemobs.puffermod.init.*;
+import fr.minemobs.puffermod.object.item.ModSpawnEggItem;
 import fr.minemobs.puffermod.world.gen.StructureGen;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -40,6 +42,7 @@ public class Main {
         BlockInit.BLOCKS.register(modEventBus);
         FluidInit.FLUIDS.register(modEventBus);
         FeatureInit.FEATURES.register(modEventBus);
+        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
         RecipeSerializerInit.RECIPE_SERIALIZERS.register(modEventBus);
@@ -58,6 +61,11 @@ public class Main {
         });
     }
 
+    @SubscribeEvent
+    public static void onRegisterEntities(final RegistryEvent.Register<EntityType<?>> entityTypeRegister){
+        ModSpawnEggItem.initSpawnEggs();
+    }
+
     private void setup(final FMLCommonSetupEvent event){
         DeferredWorkQueue.runLater(StructureGen::generateStructure);
     }
@@ -66,12 +74,6 @@ public class Main {
     public void serverStartingEvent(FMLServerStartingEvent event)
     {
         SetFireCommand.register(event.getCommandDispatcher());
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    @SubscribeEvent
-    public void onClientSetup(FMLClientSetupEvent e){
-
     }
 
     public static class ModItemGroup extends ItemGroup {

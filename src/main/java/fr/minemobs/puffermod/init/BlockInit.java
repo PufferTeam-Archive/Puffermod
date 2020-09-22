@@ -1,6 +1,7 @@
 package fr.minemobs.puffermod.init;
 
 import fr.minemobs.puffermod.Main;
+import fr.minemobs.puffermod.object.blocks.CreativeEnergyCore;
 import fr.minemobs.puffermod.object.blocks.ElectricFurnaceBlock;
 import fr.minemobs.puffermod.object.blocks.SawBlock;
 import fr.minemobs.puffermod.object.blocks.WoodenFrameBlock;
@@ -21,6 +22,9 @@ public class BlockInit {
     public static final RegistryObject<Block> project_block = BLOCKS.register("salut", () -> new Block(
             Block.Properties.create(Material.IRON).hardnessAndResistance(0.5f, 15.0f).sound(METAL)));
 
+    public static final RegistryObject<Block> test_block = BLOCKS.register("test_block", () -> new Block(
+            Block.Properties.create(Material.IRON).hardnessAndResistance(0.5f, 15.0f).sound(METAL)));
+
     public static final RegistryObject<Block> compressed_cobblestone = BLOCKS.register("compressed_cobblestone", () -> new Block(
             Block.Properties.create(Material.ROCK).hardnessAndResistance(4.0f, 12.0f).sound(STONE)));
 
@@ -37,6 +41,9 @@ public class BlockInit {
             Block.Properties.from(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> ELECTRIC_FURNACE = BLOCKS.register("electric_furnace", () -> new ElectricFurnaceBlock(
+            Block.Properties.create(Material.MISCELLANEOUS)));
+
+    public static final RegistryObject<Block> CREATIVE_ENERGY_CORE = BLOCKS.register("creative_energy_core", () -> new CreativeEnergyCore(
             Block.Properties.create(Material.MISCELLANEOUS)));
 
     public static final RegistryObject<Block> wooden_frame = BLOCKS.register("wooden_frame", () -> new WoodenFrameBlock(

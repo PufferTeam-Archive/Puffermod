@@ -1,15 +1,14 @@
 package fr.minemobs.puffermod.init;
 
 import fr.minemobs.puffermod.Main;
-import fr.minemobs.puffermod.object.item.CheeseItem;
-import fr.minemobs.puffermod.object.item.EmptyBrick;
-import fr.minemobs.puffermod.object.item.KarlsonItem;
-import fr.minemobs.puffermod.object.item.PufferCoin;
+import fr.minemobs.puffermod.object.item.*;
 import fr.minemobs.puffermod.utils.enums.ItemTier;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.awt.*;
 
 public class ItemInit {
 
@@ -80,18 +79,11 @@ public class ItemInit {
             () -> new HoeItem(ItemTier.REFINED_IRON, -1.0F,
                     new Item.Properties().group(Main.ModItemGroup.instance)));
 
-    // Singularitées
-    //tech
+    //eggs
 
-    //magie
-
-    //exploration
-
-    //build
-
-    //tools
-
-    //Puffermod
+    public static final RegistryObject<ModSpawnEggItem> TEST_SPAWN_EGG = ITEMS.register("test_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.TEST_ENTITY, Color.CYAN.getRGB(), Color.DARK_GRAY.getRGB(),
+                    new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(16)));
 
 
 }

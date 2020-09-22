@@ -15,7 +15,7 @@
     "item.puffermod.test_item": "test item",
     "item.puffermod.cheese": "Cheese",
     "item.puffermod.karlson_bucket": "Milk Bucket",
-    "fluid.puffermod.milk_fluid": "Milk fluid",
+    "item.puffermod.test_spawn_egg": "Stonks spawn egg",
 
     //block
     "block.puffermod.salut": "Hi",
@@ -25,6 +25,8 @@
     "block.puffermod.compressed_cobblestone4": "Quadruple Compressed Cobblestone",
     "block.puffermod.saw_block": "Saw block",
     "block.puffermod.wooden_frame": "Wooden frame",
+    "fluid.puffermod.milk_fluid": "Milk fluid",
+
 
     //itemgroup
     "itemGroup.Puffermod Items": "Puffermod",
@@ -42,9 +44,14 @@
     //messages
     "msg.puffermod.thic": "Is it just me or it look kinda\u00A7a THICCCC\u00A7r ?",
     "msg.puffermod.coulommiers": "Ouch, my stomach hurts.",
+    "msg.puffermod.love": "I ❤ u",
+    "msg.puffermod.notwrite": "Wait that's not what i wrote",
 
     //guis
     "gui.puffermod.energy": "Energy %s PE",
 	"gui.puffermod.smeltTimeProgress": "Smelt time %s/%s",
-	"gui.puffermod.fuelBurnTimeProgress": "Fuel burn time %s/%s"
+	"gui.puffermod.fuelBurnTimeProgress": "Fuel burn time %s/%s",
+
+    //entity
+    "entity.puffermod.test_entity": "Professional stonks"
 }

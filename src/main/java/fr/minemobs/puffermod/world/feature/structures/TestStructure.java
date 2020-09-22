@@ -89,7 +89,7 @@ public class TestStructure extends Structure<NoFeatureConfig> {
 
             int x = (chunkX << 4) + 7;
             int z = (chunkX << 4) + 7;
-            int y = generator.func_222531_c(x,z, Heightmap.Type.WORLD_SURFACE_WG);
+            int y = generator.getHeight(x,z, Heightmap.Type.WORLD_SURFACE_WG);
             BlockPos pos = new BlockPos(x, y,z );
 
             TestPieces.start(templateManagerIn, pos, rotation, this.components, this.rand);
