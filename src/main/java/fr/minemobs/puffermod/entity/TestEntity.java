@@ -4,12 +4,14 @@ import fr.minemobs.puffermod.Main;
 import fr.minemobs.puffermod.init.ItemInit;
 import fr.minemobs.puffermod.init.ModEntityTypes;
 import net.minecraft.block.BlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
@@ -77,14 +79,9 @@ public class TestEntity extends AnimalEntity {
     }
 
     @Override
-    public boolean canBreed() {
-        return true;
-    }
-
-    @Override
     public boolean isBreedingItem(ItemStack stack) {
-        if(stack.getItem() == ItemInit.cheese.get()){
-
+        if(stack.getItem() != ItemInit.cheese.get()){
+            return false;
         }
         return true;
     }
@@ -141,7 +138,8 @@ public class TestEntity extends AnimalEntity {
         World world = entity.getEntityWorld();
         BlockState bs = world.getBlockState(entity.getPosition());
         WitherEntity wiwi = new WitherEntity(EntityType.WITHER, world);
-        wiwi.setCustomName(new TranslationTextComponent("name." + Main.modId + ".wither01"));
+        wiwi.dimension.equals(entity.dimension);
+        wiwi.setPosition(entity.getPosX(), entity.getPosY(), entity.getPosZ());
         world.addEntity(wiwi);
         entity.remove();
         super.onStruckByLightning(lightningBolt);
