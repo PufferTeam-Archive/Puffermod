@@ -2,9 +2,11 @@ package fr.minemobs.puffermod;
 
 import fr.minemobs.puffermod.command.SetFireCommand;
 import fr.minemobs.puffermod.init.*;
+import fr.minemobs.puffermod.object.blocks.ClearGlass;
 import fr.minemobs.puffermod.object.item.ModSpawnEggItem;
 import fr.minemobs.puffermod.world.gen.StructureGen;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -27,6 +29,9 @@ import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Mod("puffermod")
 @Mod.EventBusSubscriber(modid = "puffermod", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Main {
@@ -40,8 +45,10 @@ public class Main {
         modEventBus.addListener(this::setup);
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        ParticleInit.PARTICLES.register(modEventBus);
         FluidInit.FLUIDS.register(modEventBus);
         FeatureInit.FEATURES.register(modEventBus);
+        PaintingInit.PAINTING_TYPES.register(modEventBus);
         ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);

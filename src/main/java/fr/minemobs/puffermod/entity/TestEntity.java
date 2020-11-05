@@ -1,15 +1,19 @@
 package fr.minemobs.puffermod.entity;
 
+import com.mojang.blaze3d.matrix.MatrixStack;
 import fr.minemobs.puffermod.Main;
 import fr.minemobs.puffermod.init.ItemInit;
 import fr.minemobs.puffermod.init.ModEntityTypes;
+import fr.minemobs.puffermod.init.ParticleInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.Vector3f;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.monster.CreeperEntity;
+import net.minecraft.entity.monster.EndermanEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -54,6 +58,15 @@ public class TestEntity extends AnimalEntity {
                 (CompoundNBT) null);
 
         return entity;
+    }
+
+    @Override
+    public void onAddedToWorld() {
+        World world = this.world;
+        for(int i = 0; i < 10; i++){
+            world.addParticle(ParticleInit.test_particle.get(), this.getPosX(), this.getPosY() + 2, this.getPosZ(), 1,1,1);
+        }
+        super.onAddedToWorld();
     }
 
     @Override

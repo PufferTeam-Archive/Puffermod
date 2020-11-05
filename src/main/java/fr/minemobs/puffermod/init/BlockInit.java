@@ -1,12 +1,10 @@
 package fr.minemobs.puffermod.init;
 
 import fr.minemobs.puffermod.Main;
-import fr.minemobs.puffermod.object.blocks.CreativeEnergyCore;
-import fr.minemobs.puffermod.object.blocks.ElectricFurnaceBlock;
-import fr.minemobs.puffermod.object.blocks.SawBlock;
-import fr.minemobs.puffermod.object.blocks.WoodenFrameBlock;
+import fr.minemobs.puffermod.object.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +23,9 @@ public class BlockInit {
     public static final RegistryObject<Block> test_block = BLOCKS.register("test_block", () -> new Block(
             Block.Properties.create(Material.IRON).hardnessAndResistance(0.5f, 15.0f).sound(METAL)));
 
+    public static final RegistryObject<Block> SKY_BLOCK = BLOCKS.register("sky_block", () -> new SkyBlock(
+            Block.Properties.create(Material.IRON).hardnessAndResistance(0.5f, 15.0f).sound(METAL)));
+
     public static final RegistryObject<Block> compressed_cobblestone = BLOCKS.register("compressed_cobblestone", () -> new Block(
             Block.Properties.create(Material.ROCK).hardnessAndResistance(4.0f, 12.0f).sound(STONE)));
 
@@ -36,6 +37,9 @@ public class BlockInit {
 
     public static final RegistryObject<Block> compressed_cobblestone4 = BLOCKS.register("compressed_cobblestone4", () -> new Block(
             Block.Properties.create(Material.ROCK).hardnessAndResistance(32.0f, 92.0f).sound(STONE)));
+
+    public static final RegistryObject<Block> clear_glass = BLOCKS.register("clear_glass", () -> new ClearGlass(
+            Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid()));
 
     public static final RegistryObject<Block> example_furnace = BLOCKS.register("saw_block", () -> new SawBlock(
             Block.Properties.from(Blocks.IRON_BLOCK)));

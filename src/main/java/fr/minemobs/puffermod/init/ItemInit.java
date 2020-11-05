@@ -37,7 +37,7 @@ public class ItemInit {
             () -> new CheeseItem(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> test_item = ITEMS.register("test_item",
-            () -> new BowItem(new Item.Properties().group(Main.ModItemGroup.instance)));
+            () -> new GunItem(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> karlson_milk = ITEMS.register("karlson_milk",
             () -> new KarlsonItem(new Item.Properties().group(Main.ModItemGroup.instance)));
@@ -83,6 +83,10 @@ public class ItemInit {
 
     public static final RegistryObject<ModSpawnEggItem> TEST_SPAWN_EGG = ITEMS.register("test_spawn_egg",
             () -> new ModSpawnEggItem(ModEntityTypes.TEST_ENTITY, Color.CYAN.getRGB(), Color.DARK_GRAY.getRGB(),
+                    new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(16)));
+
+    public static final RegistryObject<ModSpawnEggItem> RED_AMONGUS_SPAWN_EGG = ITEMS.register("red_amongus_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.RED_AMONGUS_ENTITY, Color.RED.getRGB(), Color.WHITE.getRGB(),
                     new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(16)));
 
 
