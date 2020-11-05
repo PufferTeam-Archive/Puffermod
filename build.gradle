@@ -105,7 +105,7 @@ repositories {
     maven {
         // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
-        url = "https://modmaven.k-4u.nl"
+        url = "http://modmaven.k-4u.nl"
     }
     maven {
         // new loc of a maven mirror for jei files, as a fallback
